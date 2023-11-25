@@ -1,15 +1,13 @@
-const Item = require('./items');
+class Chronicle {
+	constructor(title, events, year) {
+		this.title = title
+		this.year = year
+		this.events = events
+	}
 
-class Chronicle extends Item {
-    constructor(title, events, year) {
-        super(title, year);
-        this.events = events;
-    }
-
-    displayInfo() {
-        super.displayInfo();
-        console.log(`Events: ${this.events}`);
-    }
+	displayInfo() {
+		console.log(`Events: ${this.events}`)
+	}
 }
 
-module.exports = Chronicle;
+export default Chronicle
