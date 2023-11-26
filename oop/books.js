@@ -1,4 +1,4 @@
-class Book {
+export default class Book {
 	constructor(title, author, year, genre) {
 		this.title = title
 		this.author = author
@@ -12,5 +12,3 @@ class Book {
 		)
 	}
 }
-
-export default Book

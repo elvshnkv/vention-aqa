@@ -1,4 +1,4 @@
-export class Periodical {
+export default class Periodical {
 	constructor(title, frequency, year) {
 		this.title = title
 		this.frequency = frequency
@@ -9,5 +9,3 @@ export class Periodical {
 		console.log(`Frequency: ${this.frequency}`)
 	}
 }
-
-export default Periodical

@@ -1,4 +1,4 @@
-class Chronicle {
+export default class Chronicle {
 	constructor(title, events, year) {
 		this.title = title
 		this.year = year
@@ -9,5 +9,3 @@ class Chronicle {
 		console.log(`Events: ${this.events}`)
 	}
 }
-
-export default Chronicle
