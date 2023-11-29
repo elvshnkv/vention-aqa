@@ -1,15 +1,11 @@
-const Item = require('./items');
+export default class Periodical {
+	constructor(title, frequency, year) {
+		this.title = title
+		this.frequency = frequency
+		this.year = year
+	}
 
-class Periodical extends Item {
-    constructor(title, frequency, year) {
-        super(title, year);
-        this.frequency = frequency;
-    }
-
-    displayInfo() {
-        super.displayInfo();
-        console.log(`Frequency: ${this.frequency}`);
-    }
+	displayInfo() {
+		console.log(`Frequency: ${this.frequency}`)
+	}
 }
-
-module.exports = Periodical;
